@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>MacBook Pro Setup &middot; Devin Shively</title>
+
+  
+  <link rel="stylesheet" href="http://devinshively.github.io//css/poole.css">
+  <link rel="stylesheet" href="http://devinshively.github.io//css/hyde.css">
+  <link rel="stylesheet" href="http://devinshively.github.io//css/poole-overrides.css">
+  <link rel="stylesheet" href="http://devinshively.github.io//css/hyde-overrides.css">
+  <link rel="stylesheet" href="http://devinshively.github.io//css/hyde-x.css">
+  <link rel="stylesheet" href="http://devinshively.github.io//css/highlight/solarized_dark.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link href="/favicon.png" rel="icon">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Devin Shively &middot; Devin Shively" />
+
+  <meta name="description" content="A guide to setting up my macbook pro">
+  <meta name="keywords" content="Development,Setup,IntelliJ IDEA,Sublime Text 3,iTerm">
+  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://devinshively.github.io/"><img src="http://www.gravatar.com/avatar/d3d71e1a5d5f9ed9202e973c60d446b3?s=200" alt="gravatar"></a>
+      <h1>Devin Shively</h1>
+      <p class="lead">Web stuff and app development.</p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+        <a href="http://devinshively.github.io//">
+          <span class="fa-stack fa-sm">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+          </span>
+          Home
+        </a>
+      </li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      
+        <li class="sidebar-nav-item">
+          <a href="https://github.com/devinshively">
+            <span class="fa-stack fa-sm">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+            GitHub
+          </a>
+        </li>
+      
+      
+        <li class="sidebar-nav-item">
+          <a href="https://www.linkedin.com/pub/devin-shively/30/a30/b97">
+            <span class="fa-stack fa-sm">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+            LinkedIn
+          </a>
+        </li>
+      
+      
+      
+      
+    </ul>
+
+    <div class="sidebar-nav-footer">
+    <p>Copyright &copy; 2015 <a href="http://devinshively.github.io//license">License</a><br/>
+       Powered by <a href="http://hugo.spf13.com">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+     </div>
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+    <h1>MacBook Pro Setup</h1>
+    <span class="post-date">Feb 28, 2015 &middot; 3 minute read &middot; <a href="http://devinshively.github.io/blog/2015/02/28/macbook-pro-setup/#disqus_thread">Comments</a>
+    
+    <br/>
+    
+    <a class="label" href="http://devinshively.github.io//categories/development">Development</a><a class="label" href="http://devinshively.github.io//categories/setup">Setup</a><a class="label" href="http://devinshively.github.io//categories/intellij-idea">IntelliJ IDEA</a><a class="label" href="http://devinshively.github.io//categories/sublime-text-3">Sublime Text 3</a><a class="label" href="http://devinshively.github.io//categories/iterm">iTerm</a>
+    </span>
+    
+
+<p>Whether it is a new rig at work or if I messed up my hackintosh install, it is always a pain to remember everything that I have installed. So I thought it would be a good idea to publish my setup for future reference. Most of my setup is pulled and modified from others so credit goes to those before me. I will try to keep this page updated with any changes.</p>
+
+<p><a href="http://www.marksimonson.com/fonts/view/anonymous-pro">Alt font</a></p>
+
+<h2 id="sublime-text-3:96713cde55c6c7bfc06b30b58461dc5b">Sublime Text 3</h2>
+
+<ul>
+<li><p>Package Manager:</p>
+
+<p>ctrl + ` and enter</p>
+
+<pre><code>import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+</code></pre></li>
+
+<li><p>Subl Command line:</p>
+
+<pre><code>sudo ln -s &quot;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&quot; /usr/bin/subl
+</code></pre></li>
+
+<li><p>Alignment</p></li>
+
+<li><p>ApplySyntax</p></li>
+
+<li><p>BracketHighlighter</p></li>
+
+<li><p>Color Highlighter</p></li>
+
+<li><p>Colorpicker</p></li>
+
+<li><p>DocBlockr</p></li>
+
+<li><p><a href="https://github.com/jamiewilson/predawn/tree/master/dock-icons">Dock Icons</a></p></li>
+
+<li><p>Emmet</p></li>
+
+<li><p>GitGutter</p></li>
+
+<li><p>GoSublime</p></li>
+
+<li><p>Keybinding:</p>
+
+<pre><code>[
+    {
+        &quot;keys&quot;: [&quot;ctrl+shift+r&quot;],
+        &quot;command&quot;: &quot;reindent&quot;,
+        &quot;args&quot;: { &quot;single_line&quot;: false }
+    }
+]
+</code></pre></li>
+
+<li><p>Levels:</p>
+
+<ul>
+<li><code>ctrl + shift + l</code> to show colors</li>
+<li><code>ctrl + shift + 0</code> to normal view</li>
+</ul></li>
+
+<li><p>MarkdownEditing</p></li>
+
+<li><p>Sass</p></li>
+
+<li><p>SCSS</p></li>
+
+<li><p>SidebarEnhancements</p></li>
+
+<li><p>SublimeLinter</p></li>
+
+<li><p>Tag</p></li>
+
+<li><p>Themes:</p>
+
+<p>Solarized Dark (my current), Soda, Flatland, Predawn, Spacegray</p></li>
+
+<li><p>TrailingSpaces</p></li>
+</ul>
+
+<h2 id="intellij-idea:96713cde55c6c7bfc06b30b58461dc5b">IntelliJ Idea</h2>
+
+<p>I backup my settings to Cloud Station as settings.jar</p>
+
+<p>Go to File &gt; Import Settings&hellip; and select settings.jar</p>
+
+<p><br />
+To install Solarized Dark Theme first download the <a href="https://github.com/jkaving/intellij-colors-solarized">settings.jar</a></p>
+
+<p>Go to File &gt; Import Settings&hellip; and select settings.jar</p>
+
+<p>Restart IntelliJ IDEA</p>
+
+<p>Go to Appearance &gt; Theme and select Darcula</p>
+
+<p>Go to Preferences &gt; Editor &gt; Colors &amp; Fonts and select Solarized Dark (Darcula)</p>
+
+<h2 id="homebrew:96713cde55c6c7bfc06b30b58461dc5b">Homebrew</h2>
+
+<ul>
+<li><p>Install homebrew</p>
+
+<pre><code class="language-ruby">ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre></li>
+
+<li><p>Install packages</p>
+
+<pre><code> brew doctor
+ brew install go
+ brew install node
+ brew install vim --override-system-git
+ brew install git --override-system-git
+ brew install gradle
+ brew install python3; pip3 install --upgrade pip
+</code></pre></li>
+</ul>
+
+<h2 id="npm:96713cde55c6c7bfc06b30b58461dc5b">npm</h2>
+
+<ul>
+<li><p>Update npm and install global packages</p>
+
+<pre><code> npm install -g npm@latest
+ npm install -g bower
+ npm install -g nodemon
+ npm install -g sails
+</code></pre></li>
+</ul>
+
+<h2 id="sql-developer:96713cde55c6c7bfc06b30b58461dc5b">sql developer</h2>
+
+<ul>
+<li>Import connections xml</li>
+</ul>
+
+<h2 id="iterm2:96713cde55c6c7bfc06b30b58461dc5b">iterm2</h2>
+
+<ul>
+<li><p><a href="https://github.com/Lokaltog/powerline-fonts/tree/master/SourceCodePro">Font 15pt Source Code Pro Light for Powerline</a>:</p>
+
+<p>iTerm &gt; Preferences &gt; Profiles &gt; Text and select Change Font</p>
+
+<p>Select Source Code Pro Light 15pt</p></li>
+
+<li><p><a href="http://ethanschoonover.com/solarized/files/solarized.zip">Solarized Dark Theme</a>:</p>
+
+<p>iTerm &gt; Preferences &gt; Profiles &gt; Colors and Load Presets&hellip;</p>
+
+<p>Select solarized/iterm2-colors-solarized/Solarized Dark</p>
+
+<p>Select Load Presets&hellip; and select Solarized Dark</p></li>
+
+<li><p>Cursor:</p>
+
+<p>#d13a82</p></li>
+</ul>
+
+<h2 id="p4v:96713cde55c6c7bfc06b30b58461dc5b">p4v</h2>
+
+<ul>
+<li>Setup workspace</li>
+</ul>
+
+<h2 id="hipchat:96713cde55c6c7bfc06b30b58461dc5b">hipchat</h2>
+
+<h2 id="sourcetree:96713cde55c6c7bfc06b30b58461dc5b">sourcetree</h2>
+
+<h2 id="xcode:96713cde55c6c7bfc06b30b58461dc5b">Xcode</h2>
+
+<ul>
+<li><p>Alcatraz:</p>
+
+<pre><code>curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
+</code></pre></li>
+
+<li><p>Solarized Dark Theme:</p>
+
+<p>Installed through Alcatraz Window -&gt; Package Manager</p></li>
+
+<li><p>CocoaPods:</p>
+
+<p>Insatlled through Alcatraz Window -&gt; Package Manager</p></li>
+</ul>
+
+<h2 id="mongodb:96713cde55c6c7bfc06b30b58461dc5b">mongodb</h2>
+
+<ul>
+<li><p>Install mongodb:</p>
+
+<pre><code>brew install mongodb
+</code></pre></li>
+
+<li><p>Make data directory:</p>
+
+<pre><code>sudo mkdir -p /data/db
+sudo chown dshively /data/db
+</code></pre></li>
+</ul>
+
+<h2 id="google-chrome:96713cde55c6c7bfc06b30b58461dc5b">Google Chrome</h2>
+
+<p>I use Google Chrome main build with the following extensions:</p>
+
+<ul>
+<li>Web Server Notifier</li>
+<li>Web Technology Notifier</li>
+<li>Chrome Sniffer</li>
+<li>Ultimate User Agent</li>
+<li>What Font?</li>
+<li>Clear Cache</li>
+<li>REST Client</li>
+<li>Rails Panel</li>
+<li>Edit Cookie</li>
+<li>jQuery debugger</li>
+<li>XV XML</li>
+<li>JSON formatter</li>
+<li>PrettyPrint</li>
+<li>CSSViewer</li>
+<li>Chroma</li>
+<li>Live Reload</li>
+<li>Pages Speed</li>
+</ul>
+
+<h2 id="tomcat-7-0-57:96713cde55c6c7bfc06b30b58461dc5b">tomcat 7.0.57</h2>
+
+<h2 id="servicemix-5-1-4:96713cde55c6c7bfc06b30b58461dc5b">servicemix 5.1.4</h2>
+
+<h2 id="ant-1-9-4:96713cde55c6c7bfc06b30b58461dc5b">ant 1.9.4</h2>
+
+<h2 id="maven-3-2-3:96713cde55c6c7bfc06b30b58461dc5b">maven 3.2.3</h2>
+
+<ul>
+<li>Copy maven settings.xml file from repo to ~/.m2</li>
+</ul>
+
+<h2 id="spectacle:96713cde55c6c7bfc06b30b58461dc5b">spectacle</h2>
+
+<h2 id="alfred:96713cde55c6c7bfc06b30b58461dc5b">alfred</h2>
+
+<h2 id="f-lux:96713cde55c6c7bfc06b30b58461dc5b">f.lux</h2>
+
+<h2 id="dropbox-cloudstation:96713cde55c6c7bfc06b30b58461dc5b"><del>dropbox</del> CloudStation</h2>
+
+<p>Since purchasing a Synology DiskStation I now use CloudStation</p>
+
+  </div>
+  <div id="disqus_thread"></div>
+</div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "devinshively";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = "devinshively";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="http://devinshively.github.io//js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+  var _gaq=[['_setAccount','UA-60212481-1'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+</body>
+</html>

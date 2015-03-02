@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Iterm on Devin Shively</title>
+    <link>http://devinshively.github.io/categories/iterm/</link>
+    <description>Recent content in Iterm on Devin Shively</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Feb 2015 01:11:36 -0800</lastBuildDate>
+    <atom:link href="http://devinshively.github.io/categories/iterm/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>MacBook Pro Setup</title>
+      <link>http://devinshively.github.io/blog/2015/02/28/macbook-pro-setup/</link>
+      <pubDate>Sat, 28 Feb 2015 01:11:36 -0800</pubDate>
+      
+      <guid>http://devinshively.github.io/blog/2015/02/28/macbook-pro-setup/</guid>
+      <description>
+
+&lt;p&gt;Whether it is a new rig at work or if I messed up my hackintosh install, it is always a pain to remember everything that I have installed. So I thought it would be a good idea to publish my setup for future reference. Most of my setup is pulled and modified from others so credit goes to those before me. I will try to keep this page updated with any changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.marksimonson.com/fonts/view/anonymous-pro&#34;&gt;Alt font&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;sublime-text-3:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;Sublime Text 3&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Package Manager:&lt;/p&gt;
+
+&lt;p&gt;ctrl + ` and enter&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import urllib.request,os,hashlib; h = &#39;eb2297e1a458f27d836c04bb0cbaf282&#39; + &#39;d0e7a3098092775ccb37ca9d6b2e4b7d&#39;; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &#39;http://packagecontrol.io/&#39; + pf.replace(&#39; &#39;, &#39;%20&#39;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&#39;Error validating download (got %s instead of %s), please try manual install&#39; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &#39;wb&#39; ).write(by)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Subl Command line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo ln -s &amp;quot;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&amp;quot; /usr/bin/subl
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Alignment&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ApplySyntax&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;BracketHighlighter&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Color Highlighter&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Colorpicker&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;DocBlockr&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jamiewilson/predawn/tree/master/dock-icons&#34;&gt;Dock Icons&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Emmet&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;GitGutter&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;GoSublime&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Keybinding:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[
+    {
+        &amp;quot;keys&amp;quot;: [&amp;quot;ctrl+shift+r&amp;quot;],
+        &amp;quot;command&amp;quot;: &amp;quot;reindent&amp;quot;,
+        &amp;quot;args&amp;quot;: { &amp;quot;single_line&amp;quot;: false }
+    }
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Levels:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ctrl + shift + l&lt;/code&gt; to show colors&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl + shift + 0&lt;/code&gt; to normal view&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;MarkdownEditing&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sass&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;SCSS&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;SidebarEnhancements&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;SublimeLinter&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Tag&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Themes:&lt;/p&gt;
+
+&lt;p&gt;Solarized Dark (my current), Soda, Flatland, Predawn, Spacegray&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;TrailingSpaces&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;intellij-idea:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;IntelliJ Idea&lt;/h2&gt;
+
+&lt;p&gt;I backup my settings to Cloud Station as settings.jar&lt;/p&gt;
+
+&lt;p&gt;Go to File &amp;gt; Import Settings&amp;hellip; and select settings.jar&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+To install Solarized Dark Theme first download the &lt;a href=&#34;https://github.com/jkaving/intellij-colors-solarized&#34;&gt;settings.jar&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Go to File &amp;gt; Import Settings&amp;hellip; and select settings.jar&lt;/p&gt;
+
+&lt;p&gt;Restart IntelliJ IDEA&lt;/p&gt;
+
+&lt;p&gt;Go to Appearance &amp;gt; Theme and select Darcula&lt;/p&gt;
+
+&lt;p&gt;Go to Preferences &amp;gt; Editor &amp;gt; Colors &amp;amp; Fonts and select Solarized Dark (Darcula)&lt;/p&gt;
+
+&lt;h2 id=&#34;homebrew:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;Homebrew&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Install homebrew&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Install packages&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; brew doctor
+ brew install go
+ brew install node
+ brew install vim --override-system-git
+ brew install git --override-system-git
+ brew install gradle
+ brew install python3; pip3 install --upgrade pip
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;npm:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;npm&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Update npm and install global packages&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; npm install -g npm@latest
+ npm install -g bower
+ npm install -g nodemon
+ npm install -g sails
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;sql-developer:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;sql developer&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Import connections xml&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;iterm2:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;iterm2&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/Lokaltog/powerline-fonts/tree/master/SourceCodePro&#34;&gt;Font 15pt Source Code Pro Light for Powerline&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;iTerm &amp;gt; Preferences &amp;gt; Profiles &amp;gt; Text and select Change Font&lt;/p&gt;
+
+&lt;p&gt;Select Source Code Pro Light 15pt&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://ethanschoonover.com/solarized/files/solarized.zip&#34;&gt;Solarized Dark Theme&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;iTerm &amp;gt; Preferences &amp;gt; Profiles &amp;gt; Colors and Load Presets&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Select solarized/iterm2-colors-solarized/Solarized Dark&lt;/p&gt;
+
+&lt;p&gt;Select Load Presets&amp;hellip; and select Solarized Dark&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Cursor:&lt;/p&gt;
+
+&lt;p&gt;#d13a82&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;p4v:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;p4v&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Setup workspace&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;hipchat:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;hipchat&lt;/h2&gt;
+
+&lt;h2 id=&#34;sourcetree:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;sourcetree&lt;/h2&gt;
+
+&lt;h2 id=&#34;xcode:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;Xcode&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Alcatraz:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Solarized Dark Theme:&lt;/p&gt;
+
+&lt;p&gt;Installed through Alcatraz Window -&amp;gt; Package Manager&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;CocoaPods:&lt;/p&gt;
+
+&lt;p&gt;Insatlled through Alcatraz Window -&amp;gt; Package Manager&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;mongodb:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;mongodb&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Install mongodb:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;brew install mongodb
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Make data directory:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo mkdir -p /data/db
+sudo chown dshively /data/db
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;google-chrome:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;Google Chrome&lt;/h2&gt;
+
+&lt;p&gt;I use Google Chrome main build with the following extensions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Web Server Notifier&lt;/li&gt;
+&lt;li&gt;Web Technology Notifier&lt;/li&gt;
+&lt;li&gt;Chrome Sniffer&lt;/li&gt;
+&lt;li&gt;Ultimate User Agent&lt;/li&gt;
+&lt;li&gt;What Font?&lt;/li&gt;
+&lt;li&gt;Clear Cache&lt;/li&gt;
+&lt;li&gt;REST Client&lt;/li&gt;
+&lt;li&gt;Rails Panel&lt;/li&gt;
+&lt;li&gt;Edit Cookie&lt;/li&gt;
+&lt;li&gt;jQuery debugger&lt;/li&gt;
+&lt;li&gt;XV XML&lt;/li&gt;
+&lt;li&gt;JSON formatter&lt;/li&gt;
+&lt;li&gt;PrettyPrint&lt;/li&gt;
+&lt;li&gt;CSSViewer&lt;/li&gt;
+&lt;li&gt;Chroma&lt;/li&gt;
+&lt;li&gt;Live Reload&lt;/li&gt;
+&lt;li&gt;Pages Speed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tomcat-7-0-57:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;tomcat 7.0.57&lt;/h2&gt;
+
+&lt;h2 id=&#34;servicemix-5-1-4:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;servicemix 5.1.4&lt;/h2&gt;
+
+&lt;h2 id=&#34;ant-1-9-4:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;ant 1.9.4&lt;/h2&gt;
+
+&lt;h2 id=&#34;maven-3-2-3:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;maven 3.2.3&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Copy maven settings.xml file from repo to ~/.m2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;spectacle:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;spectacle&lt;/h2&gt;
+
+&lt;h2 id=&#34;alfred:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;alfred&lt;/h2&gt;
+
+&lt;h2 id=&#34;f-lux:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;f.lux&lt;/h2&gt;
+
+&lt;h2 id=&#34;dropbox-cloudstation:96713cde55c6c7bfc06b30b58461dc5b&#34;&gt;&lt;del&gt;dropbox&lt;/del&gt; CloudStation&lt;/h2&gt;
+
+&lt;p&gt;Since purchasing a Synology DiskStation I now use CloudStation&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
