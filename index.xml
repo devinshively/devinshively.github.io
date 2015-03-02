@@ -260,5 +260,27 @@ sudo chown dshively /data/db
 </description>
     </item>
     
+    <item>
+      <title>About Me</title>
+      <link>http://devinshively.github.io/about/</link>
+      <pubDate>Sat, 28 Feb 2015 01:10:26 -0800</pubDate>
+      
+      <guid>http://devinshively.github.io/about/</guid>
+      <description>
+
+&lt;p&gt;Hi, I’m Devin! I’m a software engineer living and working in the Silicon Valley.&lt;/p&gt;
+
+&lt;p&gt;I work mostly in Java, Go, Swift and Objective-C.&lt;/p&gt;
+
+&lt;p&gt;My main interest is in server-side technology but I am also involved in native mobile development. I am currently getting my feet wet with user facing web applications.&lt;/p&gt;
+
+&lt;p&gt;Check out my &lt;a href=&#34;https://github.com/devinshively&#34;&gt;GitHub&lt;/a&gt; page to see what I’ve been up to recently! Though a lot of my projects I keep top secret ;)&lt;/p&gt;
+
+&lt;h2 id=&#34;contact:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Contact&lt;/h2&gt;
+
+&lt;p&gt;If you’d like to get in touch, you can find me on &lt;a href=&#34;https://www.linkedin.com/pub/devin-shively/30/a30/b97&#34;&gt;LinkedIn&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
