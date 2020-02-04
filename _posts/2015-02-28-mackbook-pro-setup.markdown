@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "MacBook Pro Setup"
-description: "A guide to setting up my macbook pro
+description: "A guide to setting up my macbook pro"
 date:   2015-02-28 01:11:36 -0800
-categories: "Development" "Setup" "IntelliJ IDEA" "Sublime Text 3" "iTerm"
+categories: [code]
+tags: [Development, Setup]
 ---
 
 Whether it is a new rig at work or if I messed up my hackintosh install, it is always a pain to remember everything that I have installed. So I thought it would be a good idea to publish my setup for future reference. Most of my setup is pulled and modified from others so credit goes to those before me. I will try to keep this page updated with any changes.
